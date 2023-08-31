@@ -4,6 +4,8 @@ LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 
 COPY nginx.conf /etc/nginx/
 
+ENV TZ=Asia/Tokyo
+
 # If you're in China, or you need to change sources, will be set CHANGE_SOURCE to true in .env.
 
 ARG CHANGE_SOURCE=false
